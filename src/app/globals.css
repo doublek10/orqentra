@@ -1,0 +1,6 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+@layer base { html { scroll-behavior: smooth; } body { @apply bg-ink text-slate-300 antialiased; } h1,h2,h3 { @apply text-white tracking-tight; }
+  :focus-visible { @apply outline outline-2 outline-offset-2 outline-electric; } }
+@layer components { .card { @apply rounded-2xl border border-white/10 bg-ink-800/60 p-6 transition hover:border-electric/40; }
+  .grad-text { @apply bg-gradient-to-r from-electric to-violet bg-clip-text text-transparent; } }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
